@@ -10,14 +10,14 @@ const int NAME_LAN = 20;
 
 typedef struct {
 	
-	int id;
+	int user_id;
 	char name[NAME_LAN];
 	int balance;
 
 } Account;
 
 Account accArr[100];
-int accNu = 0;
+int accNum = 0;
 
 void ShowMenu(void);
 void MakeAccount(void);
@@ -33,7 +33,6 @@ enum
 
 int main(void) {
 	int choice;
-	
 	while(1) {
 
 	ShowMenu();
@@ -46,18 +45,23 @@ int main(void) {
 	case Make:
 		MakeAccount();
 		break;
-	case Deposit:
-		DepositMoney();
+	//case Deposit:
+	//	DepositMoney();
+	//	break;
+	//case Withdraw :
+	//	WithdrawMoney();
+	//	break;
+	case ShowA :
+		ShowAllAccInfo();
 		break;
-	case Withdraw :
-		WithdrawMoney();
-		break;
+	case EXIT : 
+		return 0;
 	default:
 		cout << "번호를 다시 입력해주세요" << endl;
 		break;
 	}
-
 	}
+	return 0;
 }
 
 void ShowMenu(void) {
@@ -67,4 +71,27 @@ void ShowMenu(void) {
 	cout << "3 . 출 금" << endl;
 	cout << "4 . 계좌정보 전체 출력" << endl;
 	cout << "5 . 프로그램 종료" << endl;
+}
+
+void MakeAccount(void) {
+	cout << "[ 계좌개설 ]" << endl;
+	cout << " 계좌ID : ";
+	cin >> accArr[accNum].user_id;
+	/*cout << endl;*/
+	cout << " 이 름 : ";
+	cin >> accArr[accNum].name;
+	/*cout << endl;*/
+	cout << " 입금액 : ";
+	cin >> accArr[accNum].balance;
+	cout << endl;
+	accNum++;
+}
+
+void ShowAllAccInfo() {
+	for (int i = 0; i < accNum; i++) {
+		cout << "계좌ID : " << accArr[i].user_id << endl;
+		cout << "이 름 : " << accArr[i].name << endl;
+		cout << "잔 액 : " << accArr[i].balance << endl;
+
+	}
 }
