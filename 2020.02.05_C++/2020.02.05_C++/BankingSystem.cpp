@@ -45,12 +45,12 @@ int main(void) {
 	case Make:
 		MakeAccount();
 		break;
-	//case Deposit:
-	//	DepositMoney();
-	//	break;
-	//case Withdraw :
-	//	WithdrawMoney();
-	//	break;
+	case Deposit:
+		DepositMoney();
+		break;
+	case Withdraw :
+		WithdrawMoney();
+		break;
 	case ShowA :
 		ShowAllAccInfo();
 		break;
@@ -86,6 +86,50 @@ void MakeAccount(void) {
 	cout << endl;
 	accNum++;
 }
+
+void WithdrawMoney() {
+	int W_id;
+	int balance;
+
+	cout << " [ 출   금 ] " << endl;
+	cout << "계좌ID : ";
+	cin >> W_id;
+	cout << "출금액 : ";
+	cin >> balance;
+
+	for (int i = 0; i < accNum; i++) {
+		if (accArr[i].user_id == W_id) {
+			if (accArr[i].balance < balance) {
+				cout << "잔액부족" << endl;
+				return;
+			}
+			accArr[i].balance -= balance;
+			cout << " 출금완료 " << endl;
+			return;
+		}
+	}
+
+}
+
+void DepositMoney() {
+	int D_id;
+	int balance;
+
+	cout << " [ 입   금 ] " << endl;
+	cout << "계좌ID : ";
+	cin >> D_id;
+	cout << "입금액 : ";
+	cin >> balance;
+
+	for (int i = 0; i < accNum; i++) {
+		if (accArr[i].user_id == D_id) {
+			accArr[i].balance += balance;
+			cout << " 입금완료 " << endl;
+			return;
+		}
+	}
+	
+};
 
 void ShowAllAccInfo() {
 	for (int i = 0; i < accNum; i++) {
