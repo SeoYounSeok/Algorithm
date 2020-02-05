@@ -72,6 +72,7 @@ void ShowMenu(void) {
 	cout << "4 . 계좌정보 전체 출력" << endl;
 	cout << "5 . 프로그램 종료" << endl;
 }
+// 주석 추가 ++
 
 void MakeAccount(void) {
 	cout << "[ 계좌개설 ]" << endl;
