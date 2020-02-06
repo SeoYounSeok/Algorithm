@@ -1,0 +1,24 @@
++ 반환형이 참조형(Reference Type)인 경우
+
+int& RefRetFuncOne(int &ref)
+{
+	ref++;
+	return ref;
+}
+
+vs
+
+int RefRetFuncTwo(int &ref)
+{
+	ref++;
+	return ref;
+}
+
+
+참조 값을 받아서 하는 경우랑 값의 변화를 알 수 있었다.
+
+int num2 = RefRetFuncOne(num1) (o)
+int &num2 = RefRetFuncOne(num1) (o)
+  
+int num2 = RefRetFuncTwo(num1) (o)
+int &num2 = RefRetFuncTwo(num1) (x)
