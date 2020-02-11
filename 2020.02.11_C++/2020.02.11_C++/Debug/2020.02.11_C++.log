@@ -1,0 +1,5 @@
+﻿  9093Word.cpp
+  9093_2.cpp
+  코드를 생성하고 있습니다...
+9093_2.obj : error LNK2005: _main이(가) 9093Word.obj에 이미 정의되어 있습니다.
+C:\Projects\C---Trainning\2020.02.11_C++\Debug\2020.02.11_C++.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
