@@ -1,4 +1,6 @@
 # C++ Trainning
 For Coding Test
 
-100일 start 
+
+C++ 프로그래밍 책 2
+
