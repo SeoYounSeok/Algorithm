@@ -1,0 +1,34 @@
+중복 선택 : Ctrl + D
+전체 선택 : Alt + F3
+다중선택 : Ctrl + Alt + up,down
+마우스 다중 선택 : Ctrl + 마우스선택
+단어 단위 이동 : Ctrl + left / right
+단어 단위 드래그 : Ctrl + Shift + left / right
+한 줄 복사 : Ctrl + Shift + D
+한 줄 삭제 : Shift + Delete
+줄 단위 이동 : Ctrl + Shift + Up / Down
+대문자로 : Ctrl + k + U
+소문자로 : Ctrl + k + L
+전체선택 : Ctrl + A
+라인선택 : Ctrl + Shift + L
+line by line 매칭
+프로젝트 등록
+파일 찾기 : Ctrl + P
+라인으로 이동 : Ctrl + G
+Syntax 변경
+랜덤 문자 생성(Lorem)
+접기 : Ctrl + Shift + [
+펼치기 : Ctrl + Shift + ]
+검색 : Ctrl + F
+전체 검색 : Ctrl + Shift + F
+전체 저장
+이전탭 / 다음탭 : Ctrl + PageUp/PageDown
+끝으로 이동 : end
+처음으로 이동 : home
+new process : Ctrl + Shift + N
+new file : Ctrl + N
+닫기 : Ctrl + W
+화면 분할 : alt + shift + 1 ~ 9
+last tab open : ctrl + shift + t
+탭 위치 변경
+현 위치 enter : ctrl + enter
