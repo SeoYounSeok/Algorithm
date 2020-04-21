@@ -1,3 +1,3 @@
 # C++ Trainning
-For Coding Test
 
+algorithm + programmer
