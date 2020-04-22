@@ -22,12 +22,13 @@ void bfs(int start){
 	while(!q.empty()){
 		int x = q.front();
 		q.pop();
-		cout << x << endl;
+		cout << "x : "<< x << endl;
 		for(int i=0; i< a[x].size(); i++){
 			int y = a[x][i];
 			cout << "y : "<< y << endl;
 			// 방문을 하지 않은 상태이라면,
 			if(!c[y]){
+				cout << "NO"<<endl;
 				q.push(y);
 				c[y]= true;
 			}
