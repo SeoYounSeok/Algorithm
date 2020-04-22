@@ -33,8 +33,11 @@ void bfs(int node){
 
 		for(int i =0; i< arr[v].size(); i++){
 			int next = arr[v][i];
-			checkBFS[next] = true;
+			if(checkBFS[next] != true){
+			
 			q.push(next);
+			checkBFS[next] = true;
+			}
 		}
 	}
 
