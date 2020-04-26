@@ -69,6 +69,6 @@ int main() {
   
 ```
 <출처>
-https://boycoding.tistory.com/178 [소년코딩]
-https://jhnyang.tistory.com/115
-https://jhnyang.tistory.com/116
+-https://boycoding.tistory.com/178 [소년코딩]
+-https://jhnyang.tistory.com/115
+-https://jhnyang.tistory.com/116
