@@ -21,6 +21,37 @@ int main() {
   
 ```
 
++ INSERT 복습 (04.27)
+
+```
+{
+
+    IntVector v;
+
+    v.push_back( 1 );
+
+    v.push_back( 2 );
+
+    v.push_back( 3 );
+
+    v.insert( v.begin(), 0 );
+
+ 
+
+    for( int i = 0; i < v.size(); i++ )
+
+    {
+
+        static int nTrace = 0;
+
+        TRACE( "%s(%d) : v = %d \n" , __FILE__, __LINE__, v[i] );
+
+    }
+
+}
+
+ ```
+
 ### 문자열 추출하기 ( substr )
 
 - 본래 문자열을 변경시키는 것은 아니고! 추출한 문자열을 리턴해줍니다.
@@ -74,3 +105,4 @@ https://boycoding.tistory.com/178
 [티스토리]  
 https://jhnyang.tistory.com/115  
 https://jhnyang.tistory.com/116  
+https://soonsin.com/733  
