@@ -99,6 +99,34 @@ int main() {
   }
   
 ```
+
+- erase 는 하나만 지워집니다 쫙 지울려면 2번째 값도 입력해야함.
+
+```
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main(){
+	vector<int> vec;
+	
+	for(int i=0; i<10; i++) vec.push_back(i*10); // 10~100 까지의 값 push 
+	
+	for(int i=0; i<vec.size(); i++) {
+		if(i == 4) {
+			vec.erase(vec.begin()+4); // 시작부터 4번째에 있는 값 삭제 4번 째 값만 삭제에요!!!
+			cout << "vec[" << i <<"] : " << vec[i] << "\n"; // vec 안에 있는 값 출력 	
+		} else {
+			cout << "vec[" << i <<"] : " << vec[i] << "\n"; // vec 안에 있는 값 출력 	
+		}
+	}
+    
+	return 0;
+} 
+
+```
 <출처>  
 [소년코딩]  
 https://boycoding.tistory.com/178   
@@ -106,3 +134,4 @@ https://boycoding.tistory.com/178
 https://jhnyang.tistory.com/115  
 https://jhnyang.tistory.com/116  
 https://soonsin.com/733  
+https://jaynamm.tistory.com  
