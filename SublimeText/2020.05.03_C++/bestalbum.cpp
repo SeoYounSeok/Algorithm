@@ -27,6 +27,8 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
             }
         }
     }
+    // 내림차순 
+    
     sort(temp.begin(), temp.end(), greater<pair<int, string>>());
     
     for (int i = 0; i < temp.size(); i++) {
